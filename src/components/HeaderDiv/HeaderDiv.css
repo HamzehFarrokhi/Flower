@@ -1,0 +1,40 @@
+.header{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content:space-between;
+    transition: 0.5s;
+}
+.header-scrolled{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    padding: 0 50px;
+    width: 100vw;
+    height: 60px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) , rgba(245, 245, 245, 1));
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+}
+.menuIcon{
+    font-size: 30px;
+    color: gray;
+}
+.cartIcon{
+    color: rgb(65, 189, 65);
+    font-size: 14px;
+    padding: 8px 10px;
+    border-radius: 50px;
+    border: 1px solid #aaa;
+    display: flex;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.cartIcon > p {
+    font-size: 12px;
+    padding-right: 8px;
+}
+.cartIcon:hover {
+    background: rgb(89, 197, 89);
+    color: white;
+}

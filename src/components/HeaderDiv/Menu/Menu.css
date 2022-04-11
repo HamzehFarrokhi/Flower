@@ -1,0 +1,43 @@
+.slider{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: calc(100% - 0px);
+    background-color: rgba(0, 206, 144, 0.95);
+    overflow: hidden;
+    transition: 0.5s;
+    color: rgb(255, 255, 255);
+    z-index: 1;
+}
+.slider > p{
+    margin: 50px 40px 20px 40px;
+    font-size: 25px;
+}
+.slider > .menu-item{
+    font-size: 25px;
+    width: calc(100% - 80px);
+    margin: 10px 40px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid;
+}
+.slider > .menu-item > li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 10px;
+}
+.slider > i{
+    display: inline-block;
+}
+.closeSlider{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 4px 10px;
+    border-radius: 50%;
+}
+.closeSlider:hover{
+    background-color: rgba(204, 204, 204, 0.5);
+}
