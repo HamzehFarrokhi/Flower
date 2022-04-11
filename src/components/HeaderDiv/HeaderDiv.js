@@ -5,10 +5,10 @@ const HeaderDiv = () => {
     
     window.onscroll = () => {
         if (window.pageYOffset >= 80){
-            document.getElementById('header').classList.add('header-scrolled');
+            document.getElementById('top-header').classList.add('top-header-scrolled');
         }
         else{
-            document.getElementById('header').classList.remove('header-scrolled');
+            document.getElementById('top-header').classList.remove('top-header-scrolled');
         }
     }
 
@@ -21,9 +21,25 @@ const HeaderDiv = () => {
         document.getElementById("slider").style.width="0";
     }
     return (
-        <div className="header" id="header">
-            <i className="fa-light fa-bars-staggered menuIcon" onClick={OpenSlider}></i>
-            <i className="fa-regular fa-cart-shopping-fast cartIcon"><p>سبد خرید</p></i>
+        <div className="header">
+            <div className='top-header' id="top-header">
+                <i className="fa-light fa-bars-staggered menuIcon" onClick={OpenSlider}></i>
+                <div className='menuSlider'>
+                    <div className="menu-item">
+                        <i className="fa-light fa-flower"></i>
+                        <li>گلخانه من</li>
+                    </div>
+                    <div className="menu-item">
+                        <i className="fa-light fa-bag-shopping"></i>
+                        <li>گلفروشی</li>
+                    </div>
+                    <div className="menu-item">
+                        <i className="fa-light fa-scissors"></i>
+                        <li>باغبون</li>
+                    </div>
+                </div>
+                <i className="fa-regular fa-cart-shopping-fast cartIcon"><p>سبد خرید</p></i>
+            </div>
             <Menu CloseSlider={CloseSlider} />
         </div>
     )
