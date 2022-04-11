@@ -13,6 +13,7 @@ const PlantList = () => {
             $(".plant-image")[p].classList.add("plant-image-open");
             $(".buyIcon")[p].classList.add("buyIcon-open");
             $(".options")[p].classList.add("options-open");
+            $(".cover")[0].classList.add("cover-open");
             for(var i = 0; i < 8; i++){
                 $(".des")[p].innerHTML+="<h3>توضیحات</h3><p>دمای گل</p><p>دوره آبدهی</p><p>دمای مطلوب گیاه</p><br>";
             }
@@ -29,6 +30,7 @@ const PlantList = () => {
         $(".plant-image")[pointer].classList.remove("plant-image-open");
         $(".buyIcon")[pointer].classList.remove("buyIcon-open");
         $(".options")[pointer].classList.remove("options-open");
+        $(".cover")[0].classList.remove("cover-open");
         $(".des")[pointer].innerHTML="";
         document.getElementById("ClosePlant").classList.remove("ClosePlant-open");
     }
@@ -99,6 +101,7 @@ const PlantList = () => {
                 </div>
             ))}
             <i onClick={ClosePlant} className="fa-light fa-arrow-left ClosePlant" id="ClosePlant"></i>
+            <div className='cover'></div>
         </div>
     )
 }

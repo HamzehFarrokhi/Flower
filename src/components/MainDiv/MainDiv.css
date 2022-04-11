@@ -24,25 +24,10 @@
     color: #000000c0;
     padding-right: 0 !important;
 }
-.ClosePlant{
-    position: fixed;
-    left: 10px;
-    top: 10px;
-    color: whitesmoke;
-    font-size: 25px;
-    padding: 10px;
-    border-radius: 50%;
-    display: none;
-    z-index: 2;
-}
-.ClosePlant-open{
-    display: block;
-}
 .descripe{
-    width: calc(100% - 40px);
-    height: 60px;
+    width: 100%;
     padding: 20px;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 200px;
     background-color: rgba(143, 140, 128, 0.096);
     border-radius: 20px;
